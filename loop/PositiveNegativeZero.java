@@ -8,7 +8,7 @@ public class PositiveNegativeZero {
         int negativeCount = 0;
         int zeroCount = 0;
 
-        System.out.println("Enter the elements:");git branch -M main
+        System.out.println("Enter the elements:");
         for (int i = 0; i < n; i++) {
             int num = new java.util.Scanner(System.in).nextInt();
 
