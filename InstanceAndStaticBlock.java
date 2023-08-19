@@ -1,9 +1,10 @@
 public class InstanceAndStaticBlock {
-        {
-            System.out.println("instance block");
-        }
         static {
             System.out.println("Static block");
+        }
+
+        {
+            System.out.println("instance block");
         }
         InstanceAndStaticBlock(){
             System.out.println("Hello");
@@ -13,5 +14,3 @@ public class InstanceAndStaticBlock {
             InstanceAndStaticBlock Obj = new InstanceAndStaticBlock();
         }
     }
-
-}
