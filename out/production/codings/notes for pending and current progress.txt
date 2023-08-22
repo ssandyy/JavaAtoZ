@@ -1,6 +1,0 @@
-lastly run FunctionWithNoArgAndWithArgs 
-
-some of the pattern program is also pending,,
-
-jumping on this, super and inheritance program .. 05/08/23
-
