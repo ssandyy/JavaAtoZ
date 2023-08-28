@@ -1,7 +1,7 @@
 package String;
 
 public class StringCommonFunction {
-    String s = "  hello  ";
+    public String s = "  hello  ";
     char[] ch =s.toCharArray();
     byte[] b = s.getBytes();
     String s1 =s.toUpperCase();
@@ -11,7 +11,6 @@ public class StringCommonFunction {
     String s6 = s.concat(" ssandyy");
     boolean s5 = s.contains("h");
     String s7 = String.format(s);
-
     String s8 = s.replace('h','s');
     String[] s9 = s.split(",", 2);
 
