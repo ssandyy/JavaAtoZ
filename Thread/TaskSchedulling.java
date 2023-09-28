@@ -15,9 +15,9 @@ class Task extends TimerTask{
 }
 public class TaskSchedulling {
     public static void main(String[] args) {
-        Timer t = new Timer();
+//        Timer t = new Timer(2000);
         int delay=3000;// delay for 3 sec
         int period = 1000;// repeat every sec
-        t.scheduleAtFixedRate(new Task(),delay,period);
+       // t.scheduleAtFixedRate(new Task(),delay,period);
     }
 }
