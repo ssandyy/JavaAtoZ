@@ -1,9 +1,7 @@
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 public class FIleInputStreamDemo {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
         FileInputStream fis = new FileInputStream("abc2.txt");
         int data = fis.read();
         System.out.println("data: " +data); // data: 97   because read() use to fetch data 1byte at atime in binary for here 'a' ascii code is 97
