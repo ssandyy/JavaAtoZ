@@ -15,5 +15,8 @@ public class FIOCopy {
             fos.write(data);
         }
         System.out.println("data copied successfully..!");
+		fis.close();
+		fos.close();
     }
+	
 }
