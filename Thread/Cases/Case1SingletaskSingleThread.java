@@ -1,4 +1,5 @@
 package Thread.Cases;
+// Single thread handling Single task..!
 
 public class Case1SingletaskSingleThread extends Thread {
     public static void main(String[] args) {

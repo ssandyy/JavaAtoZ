@@ -1,5 +1,7 @@
 package Thread.Cases;
 
+// multiple thread handling Single task..!
+
 public class Case2SingleTaskMultipleThreads extends Thread {
     public static void main(String[] args) {
         Case2SingleTaskMultipleThreads cs1 =  new Case2SingleTaskMultipleThreads();

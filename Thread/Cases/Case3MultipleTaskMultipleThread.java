@@ -1,5 +1,6 @@
 package Thread.Cases;
 
+// Multiple task handling  Multiple threads..!
 public class Case3MultipleTaskMultipleThread {
     public static void main(String[] args) {
         MyThread1 cs =  new MyThread1();
