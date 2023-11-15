@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/clone/clone.iml" filepath="$PROJECT_DIR$/clone/clone.iml" />
       <module fileurl="file://$PROJECT_DIR$/codings.iml" filepath="$PROJECT_DIR$/codings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
     </modules>
   </component>
 </project>

@@ -10,7 +10,6 @@ public class DaemonThread extends Thread{
         dt.setDaemon(true);
         dt.start();
     }
-
     public void run(){
         System.out.println("this is run method");
         System.out.println(Thread.currentThread().getName());
