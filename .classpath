@@ -2,5 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Thread"/>
+	<classpathentry kind="src" path="jdbc/crud/usingStatement"/>
+	<classpathentry excluding="Thread/|jdbc/crud/usingStatement/" kind="src" path=""/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
