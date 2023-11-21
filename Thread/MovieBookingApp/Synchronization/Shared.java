@@ -1,4 +1,4 @@
-package Synchronization;
+package Thread.MovieBookingApp.Synchronization;
 
 public class Shared {
     int x,y;

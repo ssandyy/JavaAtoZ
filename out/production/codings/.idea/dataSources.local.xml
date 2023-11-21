@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-232.9921.47">
+  <component name="dataSourceStorageLocal" created-in="IU-231.9161.38">
     <data-source name="database1@localhost" uuid="82168510-a958-4bac-ad4b-035495c0c8a4">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
       <secret-storage>master_key</secret-storage>
       <user-name>admin</user-name>
       <schema-mapping />
+    </data-source>
+    <data-source name="@localhost" uuid="1fad7393-7dc6-44af-9843-ccbb323d6887">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="ORACLE" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>system</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" negative="1" />
+        </introspection-scope>
+      </schema-mapping>
+      <introspection-level>3</introspection-level>
+      <load-sources>user_and_system_sources</load-sources>
     </data-source>
   </component>
 </project>
