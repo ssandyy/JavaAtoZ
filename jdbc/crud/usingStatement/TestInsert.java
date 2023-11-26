@@ -21,7 +21,7 @@ public class TestInsert {
             System.out.println(x);
             
             ResultSet resultSet = statement.executeQuery("select * from emp");
-            while (resultSet.next()) {
+            while (resultSet.next()) {   
                 System.out.println(resultSet.getInt(1));
                 System.out.println(resultSet.getString(2));
                 System.out.println(resultSet.getInt(3));

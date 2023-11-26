@@ -16,6 +16,8 @@ public class TestInsert1 {
             int age = 55;
             Statement stm = c.createStatement();
 
+            
+
             // int z = stm.executeUpdate("Create table emp(id number, name varchar2(100), age number)");
             // System.out.println(z);
 

@@ -14,9 +14,7 @@ public class TestDelete {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the id of the record to delete");
             id=scanner.nextInt();
-            // int a = stmt.executeUpdate("delete * from emp where id = "+id+"");
             int a = stmt.executeUpdate("delete from emp where id = "+id);
-
             System.out.println(a);
             
             ResultSet result = stmt.executeQuery("select * from emp");
