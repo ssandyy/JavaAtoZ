@@ -1,4 +1,4 @@
- package Thread.MovieBookingApp;
+package Thread.MovieBookingApp;
 
 public class MovieBookingAppWithSynchronizedBlock extends Thread{
     static BookSeats bs;
