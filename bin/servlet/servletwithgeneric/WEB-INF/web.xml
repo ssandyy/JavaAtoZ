@@ -1,0 +1,12 @@
+<web-app>
+<servlet>
+<servlet-name>ServletwithGeneric</servlet-name>
+<servlet-class>ServletwithGeneric</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>ServletwithGeneric</servlet-name>
+<url-pattern>/Home</url-pattern>
+</servlet-mapping>
+
+</web-app>
