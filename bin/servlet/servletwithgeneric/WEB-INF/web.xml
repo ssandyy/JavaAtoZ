@@ -8,5 +8,4 @@
 <servlet-name>ServletwithGeneric</servlet-name>
 <url-pattern>/Home</url-pattern>
 </servlet-mapping>
-
 </web-app>

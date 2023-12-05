@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 class Test {
     public static void main(String[] args) {
-        int fact = 1;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a non-negative integer: ");
-        int N = scanner.nextInt();
-        for (int i = 1; i <= N; i++) {
-            fact = fact * i;
+        int answer = 1;
+        do {
+            Scanner num = new Scanner(System.in);
+            System.out.println("Do you want to enter more numbers? (0/1)");
+            answer = num.nextInt();
+        } while (true);
+        {
+            System.out.println("Thank you for using the program!");
         }
-        System.out.println(fact);
     }
 }

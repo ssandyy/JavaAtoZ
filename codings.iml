@@ -31,6 +31,86 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="web" name="Web5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/program1/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/program1" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/servlet/httpServlet/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/servlet/httpServlet" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web10">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/maven/program1/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/maven/program1/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web7">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web6">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/maven/Servers/Tomcat v9.0 Server at localhost-config/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/maven/Servers/Tomcat v9.0 Server at localhost-config" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web9">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web11">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/test1/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/maven/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/test1" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web8">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/maven/test1/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/maven/test1/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/bin" />

@@ -6,7 +6,7 @@
 
 <servlet-mapping>
 <servlet-name>DuplicateService</servlet-name>
-<url-pattern>/Home</url-pattern>
+<url-pattern>/Homes</url-pattern>
 </servlet-mapping>
 
 <servlet>
