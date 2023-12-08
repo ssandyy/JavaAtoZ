@@ -14,7 +14,7 @@ public class LoginServlet extends HttpServlet {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
             Statement stmt = con.createStatement();
-            String query = "select * from user where username='"+uname+"' and password='"+pass+"'";
+            String query = "select * from emp101 where username='"+uname+"' and password='"+pass+"'";
             ResultSet rs = stmt.executeQuery(query);
 
             if(rs.next()){

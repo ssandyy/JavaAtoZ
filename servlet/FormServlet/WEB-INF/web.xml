@@ -1,0 +1,11 @@
+<web-app>
+<servlet>
+<servlet-name>FormServlet</servlet-name>
+<servlet-class>FormServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>FormServlet</servlet-name>
+<url-pattern>/form</url-pattern>
+</servlet-mapping>
+</web-app>
