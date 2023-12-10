@@ -1,5 +1,3 @@
-package servlet;
-
 import javax.servlet.http.*;
 import javax.servlet.*;
 import java.io.*;
@@ -22,9 +20,8 @@ public class DemoServlet1 implements Servlet{
 
         try {
             //Thread.sleep(10000);
-        } catch (Exception e) {
-            out.println("</body></html>");
-        }
+        } catch (Exception e) {}
+        out.println("</body></html>");
     }
     public void destroy(){}
     public ServletConfig getServletConfig(){

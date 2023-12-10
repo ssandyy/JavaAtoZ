@@ -16,6 +16,7 @@ public class Emp {
         System.out.println("your name is "+name);
     }
     public int getAge(){
+        
         System.out.println("your age is "+age);
     }
 }

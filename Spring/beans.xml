@@ -6,5 +6,6 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 
 <bean id="Hello World" class="spring.Emp" scope="prototype">
     	<property name="name" value="Prototype Scope">
+		<property name="age" value="95"/>
 </bean>
 </beans>
