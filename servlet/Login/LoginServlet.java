@@ -20,6 +20,8 @@ public class LoginServlet extends HttpServlet {
 
             if(rs.next()){
                 out.println("<h1>Welcome "+name+"</h1>");
+                out.println("<br>");
+                out.println("<a href='index.html'>Back To Home</a>");;
             }
             else{
                 out.println("<h1>Invalid username or password</h1>");
