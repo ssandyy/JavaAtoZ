@@ -1,0 +1,415 @@
+<html lang="en">
+   
+<head>
+      <!--========= Basic Page Needs =========-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!--========== Specific Meta ==========-->
+      <meta name="description" content="Online Education template Based on HTML5.">
+      <meta name="keywords" content="HTML5, Template, Design, Development, education, edulab, online cources, training, online education, best education template">
+      <!--======== Page Title===========-->
+      <title>CBSE - Central Board of Secondary Education</title>
+      <!--========== Favicons =========-->
+      <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+      <!--======== Font icon Css ============-->
+      <!--======= Bootstrap Main Css =============-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+      <style>
+         .center {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 10%;
+         padding-top: 2%;
+         }
+         .title {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 40%;
+         text-align: center;
+         }
+         .link {
+         font-size:30px;
+         font-family: Times New Roman Bold Italic;
+         color: #348f9e;
+         float: center;
+         }
+         .container {
+         position: relative;
+         display: block;
+         width: 100%;
+         margin: 0 auto;
+         text-align: center;
+         }
+         .btn-grad {
+         margin: 10px;
+         padding: 10px;
+         text-transform: uppercase;
+         transition: 0.5s;
+         background-size: 200% auto;
+         color: white;
+         /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+         box-shadow: 0 0 20px #eee;
+         border-radius: 10px;
+         display: inline-block;
+         width: 272PX;
+         font-size: 20px;
+         }
+         .btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)}
+         .btn-grad:hover { background-position: right center; }
+      </style>
+      <style>
+         a.hitCounter.badge-done0 {
+         background-color: #26a0da;
+         display: inline-block;
+         background-repeat: no-repeat;
+         color: #ffffff;
+         text-decoration: none;
+         text-indent: 40px;
+         padding: 7px;
+         min-width: 90px;
+         font-size: 18px;
+         background-position: 8px 10px;
+         }
+         .customContainer{
+          max-width: 90%;
+         }
+
+/*    Footer Started     */
+         footer { text-align: center; }
+
+         footer p {
+            color: #888;
+            font-size: 15px;
+            letter-spacing: .4px;
+         }
+
+         footer a {
+            color: #4a89dc;
+            text-decoration: none;
+            transition: all .2s ease;
+         }
+
+         footer a:hover {
+            color: #666;
+            text-decoration: underline;
+         }
+
+         footer img {
+            width: 200px;
+            transition: all .2s ease;
+         }
+
+         footer img:hover { opacity: .83; }
+
+         footer img:focus , footer a:focus { outline: none; }
+
+/*      Footer ends   */
+
+/* Clock Started */
+            .clock {
+               --hrAngle: 0deg;
+               --minAngle: 0deg;
+               --secAngle: 0deg;
+               margin: auto;
+               position: relative;
+               width: 19.5em;
+               height: 19.5em;
+            }
+            .clock__hand,
+            .clock__number {
+               position: absolute;
+            }
+            .clock__hand {
+               top: calc(50% - 0.75em);
+               left: calc(50% - 0.75em);
+               text-shadow: 0 0.0625em 0.125em hsla(var(--hue),90%,10%,0.7);
+               width: 1.5em;
+               height: 1.5em;
+            }
+            .clock__number {
+               font-weight: 700;
+               text-align: center;
+               transition: color var(--trans-dur);
+               width: 100%;
+               height: 100%;
+               user-select: none;
+               -webkit-user-select: none;
+               -moz-user-select: none;
+            }
+            .clock__hand--h {
+               font-size: 0.875em;
+               transform: rotate(var(--hrAngle));
+            }
+            .clock__hand--h .clock__number {
+               color: hsl(var(--hue),10%,30%);
+            }
+            .clock__hand--h .clock__number:nth-child(1) {
+               transform: translateY(-100%) rotate(calc(var(--hrAngle) * -1));
+            }
+            .clock__hand--h .clock__number:nth-child(2) {
+               transform: translateY(-200%) rotate(calc(var(--hrAngle) * -1));
+            }
+            .clock__hand--h .clock__number:nth-child(3) {
+               transform: translateY(-300%) rotate(calc(var(--hrAngle) * -1));
+            }
+            .clock__hand--h .clock__number:nth-child(4) {
+               transform: translateY(-400%) rotate(calc(var(--hrAngle) * -1));
+            }
+            .clock__hand--m {
+               font-size: 0.9375em;
+               text-shadow: 0 0.0625em 0.125em hsla(var(--hue),90%,10%,0.5);
+               transform: rotate(var(--minAngle));
+            }
+            .clock__hand--m .clock__number {
+               color: hsl(var(--hue),10%,20%);
+            }
+            .clock__hand--m .clock__number:nth-child(1) {
+               transform: translateY(-100%) rotate(calc(var(--minAngle) * -1));
+            }
+            .clock__hand--m .clock__number:nth-child(2) {
+               transform: translateY(-200%) rotate(calc(var(--minAngle) * -1));
+            }
+            .clock__hand--m .clock__number:nth-child(3) {
+               transform: translateY(-300%) rotate(calc(var(--minAngle) * -1));
+            }
+            .clock__hand--m .clock__number:nth-child(4) {
+               transform: translateY(-400%) rotate(calc(var(--minAngle) * -1));
+            }
+            .clock__hand--m .clock__number:nth-child(5) {
+               transform: translateY(-500%) rotate(calc(var(--minAngle) * -1));
+            }
+
+            .clock__hand--s {
+               text-shadow: 0 0.0625em 0.1875em hsla(var(--hue),90%,10%,0.3);
+               transform: rotate(var(--secAngle));
+            }
+            .clock__hand--s .clock__number {
+               color: var(--fg);
+            }
+            .clock__hand--s .clock__number:nth-child(1) {
+               transform: translateY(-100%) rotate(calc(var(--secAngle) * -1));
+            }
+            .clock__hand--s .clock__number:nth-child(2) {
+               transform: translateY(-200%) rotate(calc(var(--secAngle) * -1));
+            }
+            .clock__hand--s .clock__number:nth-child(3) {
+               transform: translateY(-300%) rotate(calc(var(--secAngle) * -1));
+            }
+            .clock__hand--s .clock__number:nth-child(4) {
+               transform: translateY(-400%) rotate(calc(var(--secAngle) * -1));
+            }
+            .clock__hand--s .clock__number:nth-child(5) {
+               transform: translateY(-500%) rotate(calc(var(--secAngle) * -1));
+            }
+            .clock__hand--s .clock__number:nth-child(6) {
+               transform: translateY(-600%) rotate(calc(var(--secAngle) * -1));
+            }
+            .clock__hand--ap {
+               color: var(--fg);
+               font-size: 0.75em;
+            }
+
+            /* Dark theme */
+            @media (prefers-color-scheme: dark) {
+               :root {
+                  --bg: hsl(var(--hue),10%,30%);
+                  --fg: hsl(var(--hue),10%,90%);
+               }
+               .clock__hand--h .clock__number {
+                  color: hsl(var(--hue),10%,70%);
+               }
+               .clock__hand--m .clock__number {
+                  color: hsl(var(--hue),10%,80%);
+               }
+            }
+      </style>
+       </head>
+
+   <body style="background-color:#fff; background-image: url('images/bnr8.jpg'); background-repeat: no-repeat; background-size: cover;">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <img src="images/logo.png"  class="center" >
+            </div>
+         </div>
+      </div>
+      <div class="container title">
+         <img src="images/cbse_name.png" class="title">
+      </div>
+
+         <div class="container customContainer">
+            <div class="mainWebTab hoverContainerBlk" style="margin-bottom: 15px;">               
+              <a id="gvlist_lnkbtnOnline_0" title="Main Website" style="font-family: "Arial Unicode MS";" class="btn-grad" href="#" target="_blank"><b> <br>मुख्य वेबसाइट <br>MAIN WEBSITE <br><br></b>
+            
+               </a>
+               <a id="gvlist_lnkbtnOnline_0" title="A Comprehensive One Stop Portal for All Exam Activities" class="btn-grad" href="#"><b> <br>विद्यार्थी<br>STUDENTS<br><br></b></a>
+               <a id="gvlist_lnkbtnOnline_0" title="Result"class="btn-grad" href="#/" target="_blank" ><b><br>परिणाम एवं प्रमाणपत्र<br>RESULT & CERTIFICATE<br> <br></b></a> 
+            </div>
+            <div class="mainWebTab">               
+                  <a id="gvlist_lnkbtnOnline_0" title="A Comprehensive One Stop Portal for All Affiliation Activities" class="btn-grad" href="#" target="_blank" ><b> <br>अंक जोड़ें<br>ADD MARKS<br><br>  </b></a>
+                  <a id="gvlist_lnkbtnOnline_0" title="Academic Website" class="btn-grad"  href="#" target="_blank"><b><br>प्रतिशत एवं कोटियन<br>PERCENTAGE & GRADE<br><br></b></a>
+               <a id="gvlist_lnkbtnOnline_0" title="A Comprehensive One Stop Portal for Training Activities" class="btn-grad"  href="#" target="_blank"><b><br>सूचना एवं अद्यतन<br>NOTICE & UPDATE<br><br></b></a>  
+             </div>
+         </div>
+      
+      <div class="container">
+        <div class="text-center" style="min-height: 150px">
+                  
+                  <div class="clock">
+                     <div class="clock__hand clock__hand--h" aria-hidden="true" data-unit>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                     </div>
+                     <div class="clock__hand clock__hand--m" style="color:#114199;" aria-hidden="true" data-unit>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <!-- <div class="clock__number">00</div> -->
+                     </div>
+                     <div class="clock__hand clock__hand--s" style="color:rgb(131, 131, 131);" aria-hidden="true" data-unit>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <div class="clock__number">00</div>
+                        <!-- <div class="clock__number">00</div> -->
+                     </div>
+                     <div class="clock__hand clock__hand--ap" style="color:red;" aria-hidden="true" data-unit>
+                        <div class="clock__number">AM</div>
+                     </div>
+                  </div>
+         </div>
+      </div>
+
+      <!-- Foooterrr -->
+      <footer>
+         <a href="home" target="_blank"><img src="https://www.codesquadz.com/web_assets/img/aelogowhitenew.png"></a>
+         <p>You Gotta Love <a href="https://www.codesquadz.com/" target="_blank">CodeSquardz</a></p>
+      </footer>
+  </body>
+
+      <script type="text/javascript">
+               window.addEventListener("DOMContentLoaded",() => {
+               const c = new Clock31(".clock");
+            });
+
+            class Clock31 {
+               constructor(el) {
+                  this.el = document.querySelector(el);
+
+                  this.init();
+               }
+               init() {
+                  this.timeUpdate();
+               }
+               get timeAsObject() {
+                  const date = new Date();
+                  const h = date.getHours();
+                  const m = date.getMinutes();
+                  const s = date.getSeconds();
+
+                  return {h,m,s};
+               }
+               get timeAsString() {
+                  const [h,m,s,ap] = this.timeDigits;
+                  const time = `${h}:${m}:${s} ${ap}`;
+
+                  return `${time}`.trim();
+               }
+               get timeDigits() {
+                  let {h,m,s} = this.timeAsObject;
+
+                  const ap = h > 11 ? "PM" : "AM";
+                  if (h > 12) h -= 12;
+
+                  const hh = `${h}`;
+                  const mm = m < 10 ? `0${m}` : `${m}`;
+                  const ss = s < 10 ? `0${s}` : `${s}`;
+
+                  return [hh,mm,ss,ap];
+               }
+               animateSecondHand() {
+                  const time = this.timeAsObject;
+                  const minFraction = time.s / 60;
+                  const angleB = Utils.decPlaces(360 * minFraction,3);
+                  const angleA = angleB - 6;
+                  const duration = 300;
+                  const easing = "cubic-bezier(0.65,0,0.35,1)";
+                  const handEl = this.el?.querySelectorAll("[data-unit]")[2];
+                  // hand itself
+                  handEl?.animate(
+                     [
+                        { transform: `rotate(${angleA}deg)` },
+                        { transform: `rotate(${angleB}deg)` }
+                     ],
+                     { duration, easing }
+                  );
+                  // numbers inside
+                  const numbers = handEl.children;
+                  for (let n = 0; n < numbers.length; ++n) {
+                     const transY = -100 * (n + 1);
+                     numbers[n].animate(
+                        [
+                           { transform: `translateY(${transY}%) rotate(${-angleA}deg)` },
+                           { transform: `translateY(${transY}%) rotate(${-angleB}deg)` }
+                        ],
+                        { duration, easing }
+                     );
+                  }
+               }
+               timeUpdate() {
+                  // update the accessible timestamp in the `title`
+                  this.el?.setAttribute("title", this.timeAsString);
+                  // move the hands
+                  const time = this.timeAsObject;
+                  const minFraction = time.s / 60;
+                  const hrFraction = (time.m + minFraction) / 60;
+                  const twelveHrFraction = (time.h % 12 + hrFraction) / 12;
+                  const angles = [
+                     {
+                        prop: "--secAngle",
+                        value: Utils.decPlaces(360 * minFraction,3)
+                     },
+                     {
+                        prop: "--minAngle",
+                        value: Utils.decPlaces(360 * hrFraction,3)
+                     },
+                     {
+                        prop: "--hrAngle",
+                        value: Utils.decPlaces(360 * twelveHrFraction,3)
+                     }
+                  ];
+                  for (let a of angles) {
+                     this.el?.style.setProperty(a.prop,`${a.value}deg`);
+                  }
+                  // draw the hands using the corresponding digits
+                  const digits = this.timeDigits;
+                  for (let d = 0; d < digits.length; ++d) {
+                     const unitEl = this.el?.querySelectorAll("[data-unit]")[d];
+                     if (unitEl) {
+                        const numbers = unitEl.children;
+                        for (let n = 0; n < numbers.length; ++n) {
+                           numbers[n].textContent = digits[d];
+                        }
+                     }
+                  }
+                  this.animateSecondHand();
+                  // loop
+                  clearTimeout(this.timeUpdateLoop);
+                  this.timeUpdateLoop = setTimeout(this.timeUpdate.bind(this),1e3);
+               }
+            }
+            class Utils {
+               static decPlaces(n,d) {
+                  return Math.round(n * 10 ** d) / 10 ** d;
+               }
+            }
+      </script>
+</html>

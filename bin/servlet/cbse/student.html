@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Student Manager</title>
+</head>
+
+<body>
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <form class="student-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control name" id="=stdname" placeholder="Enter your name...">
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control name" id="=stdname" placeholder="Enter your name...">
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control name" id="=stdname" placeholder="Enter your name...">
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control name" id="=stdname" placeholder="Enter your name...">
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control name" id="=stdname" placeholder="Enter your name...">
+          </div>
+          
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control age" id="age" placeholder="Enter your age...">
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control address" id="address" placeholder="Enter your address...">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control phone" id="phone" placeholder="Enter your phone...">
+          </div>
+          <button type="button" class="btn btn-primary w-100 createStudent" onClick="onClickCreateStudent()">CREATE</button>
+        </form>
+      </div>
+      <div class="col-md-8">
+        <div class="row" id="student-list">
+          <!-- list student -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+  <script>
+    var students = [
+  { name: "Sơn Đặng", age: 25, phone: "0240.838.888", address: "Hà Nội" },
+  { name: "Nguyễn Việt", age: 26, phone: "0933.313.456", address: "Hà Nội" },
+  { name: "Việt Hà", age: 22, phone: "0984.894.012", address: "Hoà Bình" },
+  { name: "Dương Phạm", age: 18, phone: "0984.894.099", address: "Hải Phòng" }
+];
+
+var editMode = false;
+
+var studentIdTmp;
+
+function enableEditMode() {
+  editMode = true;
+}
+
+function disableEditMode() {
+  editMode = false;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  renderStudent();
+});
+
+function renderStudent() {
+  var html = "";
+  var lengthStudents = students.length;
+  for (var i = 0; i < lengthStudents; i++) {
+    var student = students[i];
+    html += '<div class="col-md-4">';
+    html += '<div class="card mt-2">';
+    html += '<div class="card-body">';
+    html += '<h5 class="card-title">Name: ' + student.name + "</h5>";
+    html += '<p class="card-text">Age: ' + student.age + "</p>";
+    html += '<p class="card-text">Address: ' + student.address + "</p>";
+    html += '<p class="card-text">Phone: ' + student.phone + "</p>";
+    html += '<div class="d-flex">';
+    html +=
+      '<button class="btn btn-primary btn-sm mr-2 w-50" onclick="onEditStudent(' +
+      i +
+      ')">Edit</button>';
+    html +=
+      '<button class="btn btn-danger btn-sm w-50" onclick="onDeleteStudent(' +
+      i +
+      ')">Delete</button>';
+    html += "</div>";
+    html += "</div>";
+    html += "</div>";
+    html += "</div>";
+  }
+  setHTML("#student-list", html);
+}
+
+// get value from input
+function getInputValue(selector) {
+  var inputElement = document.querySelector(selector);
+  return inputElement.value;
+}
+
+// set value to input
+function setInputValue(selector, value) {
+  var element = document.querySelector(selector);
+  element.value = value;
+}
+
+// handle logic edit student
+function editStudentHandle() {
+  var name = getInputValue(".student-form .name");
+  var age = getInputValue(".student-form .age");
+  var address = getInputValue(".student-form .address");
+  var phone = getInputValue(".student-form .phone");
+
+  // getIndex student to edit by tmpIndex
+  // console.log(studentIdTmp);
+  editStudent(studentIdTmp, {
+    name,
+    age,
+    address,
+    phone
+  });
+
+  renderStudent();
+
+  disableEditMode();
+  setHTML(".createStudent", "CREATE");
+  resetFormStudent();
+}
+
+// on click to create student
+function onClickCreateStudent() {
+  if (editMode) {
+    editStudentHandle();
+  } else {
+    var name = getInputValue(".student-form .name");
+    var age = getInputValue(".student-form .age");
+    var address = getInputValue(".student-form .address");
+    var phone = getInputValue(".student-form .phone");
+
+    var student = {
+      name,
+      age,
+      address,
+      phone
+    };
+
+    addStudent(student);
+    renderStudent();
+    resetFormStudent();
+  }
+}
+
+// add student
+function addStudent(student) {
+  students.push(student);
+}
+
+// delete student
+function studentDelete(index) {
+  students.splice(index, 1);
+}
+
+// edit student
+function editStudent(index, student) {
+  students[index] = student;
+}
+
+// on click to delete student button
+function onDeleteStudent(index) {
+  if (confirm("Are you delete")) {
+    studentDelete(index);
+    renderStudent();
+  }
+}
+
+// get student from index
+function getStudent(index) {
+  return students[index];
+}
+
+// on click edit student
+function onEditStudent(index) {
+  var student = getStudent(index);
+  setInputValue(".student-form .name", student.name);
+  setInputValue(".student-form .age", student.age);
+  setInputValue(".student-form .address", student.address);
+  setInputValue(".student-form .phone", student.phone);
+
+  // enable editMode
+  enableEditMode();
+
+  // Create --> Save
+  setHTML(".createStudent", "SAVE");
+
+  studentIdTmp = index;
+}
+
+// set html insite a element
+function setHTML(selector, html) {
+  var element = document.querySelector(selector);
+  element.innerHTML = html;
+}
+
+// reset form student
+function resetFormStudent() {
+  setInputValue(".student-form .name", "");
+  setInputValue(".student-form .age", "");
+  setInputValue(".student-form .address", "");
+  setInputValue(".student-form .phone", "");
+}
+
+  </script>
+</body>
+
+</html>
