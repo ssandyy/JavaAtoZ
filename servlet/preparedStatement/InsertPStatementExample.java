@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class InsertPStatementExample {
-
     private static final String INSERT_USER = "INSERT INTO users" + " (id,name, email,country, password) " + " values(?,?,?,?,?); ";
 
     public void insertRecords() throws SQLException, ClassNotFoundException {
@@ -14,8 +13,10 @@ public class InsertPStatementExample {
 
         // step 1 : connection establishment
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_demo?useSSL=false", "root", "");
+            
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_demo?useSSL=false",
+                    "root", "");
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USER);
 
             preparedStatement.setInt(1, 1);
@@ -24,13 +25,15 @@ public class InsertPStatementExample {
             preparedStatement.setString(4, "India");
             preparedStatement.setString(5, "rahul");
 
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+}
+
 
     public static void main(String[] args)  {
         InsertPStatementExample ipe = new InsertPStatementExample();

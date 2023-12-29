@@ -2,7 +2,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 import java.sql.*;
-public class DublicateService extends HttpServlet
+public class DuplicateService extends HttpServlet
 {
 	
 	public void service(HttpServletRequest req , HttpServletResponse res)throws ServletException,IOException
