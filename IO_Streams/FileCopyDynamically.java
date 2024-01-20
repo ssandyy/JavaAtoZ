@@ -19,5 +19,4 @@ public class FileCopyDynamically{
 		fis.close();
 		fos.close();
     }
-	
 }

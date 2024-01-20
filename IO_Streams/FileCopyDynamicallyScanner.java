@@ -1,4 +1,4 @@
-//package IO_Streams;
+package IO_Streams;
 //this is via Scanner class approch
 
 import java.io.FileInputStream;

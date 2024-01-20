@@ -1,1 +1,1 @@
-abcABC
+abcABC this is secrect in abc2 text file
